@@ -1,0 +1,195 @@
+:root {
+    --color--brand-primary: #2f5d46;
+    --color--brand-secondary: #000;
+    --color--brand-text: #000;
+    --color--brand-text-muted: #666666;
+    --color--success: #00ffb2;
+    --color--info: #0084ff;
+    --color--danger: #ff4800;
+    --color--warning: #ffb300;
+    --color--muted: #dedede;
+    --color--white: #ffffff;
+    --color--glass: rgba(255, 255, 255, 0.5);
+    --border-radius: 5px;
+    --break-xxs: 380px;
+    --break-xs: 680px;
+    --break-sm: 768px;
+    --break-md: 1140px;
+    --break-lg: 1280px;
+    --break-xl: 1440px;
+    --break-xxl: 1560px
+}
+
+.container {
+    padding: 0 15px;
+    max-width: 1440px;
+    margin: 0 auto
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        padding: 0 55px
+    }
+}
+
+.container--fluid {
+    max-width: none
+}
+
+.container--lg {
+    max-width: 1600px
+}
+
+.container--wide {
+    max-width: 1770px
+}
+
+.container--overflow-right {
+    max-width: none;
+    padding-right: 0;
+    padding-left: 0
+}
+
+@media screen and (min-width: 1280px) {
+    .container--overflow-right {
+        padding-right: 0;
+        padding-left: 0;
+        overflow: hidden
+    }
+    .container--overflow-right .flickity-viewport {
+        overflow: visible
+    }
+}
+
+.container--overflow-left {
+    max-width: none
+}
+
+@media screen and (min-width: 1280px) {
+    .container--overflow-left {
+        overflow: visible
+    }
+    .container--overflow-left .flickity-viewport {
+        overflow: visible
+    }
+}
+
+.container>.col {
+    margin: 0 -15px
+}
+
+.gift-tip--header {
+    padding-bottom: 3em;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    line-height: 1
+}
+
+.gift-tip--header h2 {
+    font-size: 1.5em;
+    line-height: 1.25;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0
+}
+
+@media screen and (min-width: 1000px) {
+    .gift-tip--header h2 {
+        font-size: 2em
+    }
+}
+
+.gift-tip--wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 3em;
+    max-width: 1000px
+}
+
+@media screen and (min-width: 1000px) {
+    .gift-tip--wrapper {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row
+    }
+}
+
+.gift-tip--wrapper>* {
+    -webkit-box-flex: 10;
+    -ms-flex: 10 0 0px;
+    flex: 10 0 0
+}
+
+.gift-tip--wrapper .Form__Item {
+    margin-bottom: 20px
+}
+
+.gift-tip--wrapper .Form__Input {
+    border: 0px;
+    border-bottom: 1.5px solid #000
+}
+
+.gift-tip--wrapper .Button {
+    background-color: var(--gift-tip-modal--highlight-color);
+    border-radius: 999px
+}
+
+.gift-tip--product-image {
+    mix-blend-mode: darken
+}
+
+.gift-tip--product {
+    -webkit-box-flex: 7;
+    -ms-flex: 7 0 0px;
+    flex: 7 0 0
+}
+
+.gift-tip--message {
+    font-size: 1.25em;
+    background: hsla(0, 0%, 100%, .5);
+    padding: 1em
+}
+
+.gift-tip--message b {
+    display: block;
+    margin: 0 0 .5em 0
+}
+
+.gift-tip--message>span {
+    line-height: 1.25;
+    display: inline-block;
+    font-size: 1.25em;
+    font-family: monospace
+}
+
+.gift-tip--message>span * {
+    font-family: monospace
+}
+
+.gift-tip--message>span strong {
+    color: var(--gift-tip-modal--highlight-color)
+}
+
+.gift-tip--placeholder {
+    min-width: 4.6em;
+    height: 1.5em;
+    margin: 0 5px;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    padding: 0;
+    font-weight: bold;
+    text-align: center
+}
+
+.Modal--GiftTip .Modal__Inner {
+    background-color: #efefef
+}
+
+/*# sourceMappingURL=gift-tip.min.css.map */

@@ -1,0 +1,592 @@
+:root {
+    --color--brand-primary: #2f5d46;
+    --color--brand-secondary: #000;
+    --color--brand-text: #000;
+    --color--brand-text-muted: #666666;
+    --color--success: #00ffb2;
+    --color--info: #0084ff;
+    --color--danger: #ff4800;
+    --color--warning: #ffb300;
+    --color--muted: #dedede;
+    --color--white: #ffffff;
+    --color--glass: rgba(255, 255, 255, 0.5);
+    --border-radius: 5px;
+    --break-xxs: 380px;
+    --break-xs: 680px;
+    --break-sm: 768px;
+    --break-md: 1140px;
+    --break-lg: 1280px;
+    --break-xl: 1440px;
+    --break-xxl: 1560px
+}
+
+:root {
+    --color--brand-primary: #2f5d46;
+    --color--brand-secondary: #000;
+    --color--brand-text: #000;
+    --color--brand-text-muted: #666666;
+    --color--success: #00ffb2;
+    --color--info: #0084ff;
+    --color--danger: #ff4800;
+    --color--warning: #ffb300;
+    --color--muted: #dedede;
+    --color--white: #ffffff;
+    --color--glass: rgba(255, 255, 255, 0.5);
+    --border-radius: 5px;
+    --break-xxs: 380px;
+    --break-xs: 680px;
+    --break-sm: 768px;
+    --break-md: 1140px;
+    --break-lg: 1280px;
+    --break-xl: 1440px;
+    --break-xxl: 1560px
+}
+
+.ArticleList {
+    max-width: none;
+    padding-right: 0
+}
+
+@media screen and (min-width:1280px) {
+    .ArticleList {
+        padding-right: 0;
+        overflow: visible
+    }
+    .ArticleList .flickity-viewport {
+        overflow: visible
+    }
+}
+
+.container {
+    padding: 0 15px;
+    max-width: 1440px;
+    margin: 0 auto
+}
+
+@media screen and (min-width:1280px) {
+    .container {
+        padding: 0 55px
+    }
+}
+
+.container--fluid {
+    max-width: none
+}
+
+.container--lg {
+    max-width: 1600px
+}
+
+.container--wide {
+    max-width: 1770px
+}
+
+.container--overflow-right {
+    max-width: none;
+    padding-right: 0;
+    padding-left: 0
+}
+
+@media screen and (min-width:1280px) {
+    .container--overflow-right {
+        padding-right: 0;
+        padding-left: 0;
+        overflow: hidden
+    }
+    .container--overflow-right .flickity-viewport {
+        overflow: visible
+    }
+}
+
+.container--overflow-left {
+    max-width: none
+}
+
+@media screen and (min-width:1280px) {
+    .container--overflow-left {
+        overflow: visible
+    }
+    .container--overflow-left .flickity-viewport {
+        overflow: visible
+    }
+}
+
+.container>.col {
+    margin: 0-15px
+}
+
+[data-section-type=buttons-links-list] {
+    padding: 15px 0;
+    padding: 50px 0
+}
+
+@media screen and (max-width:640px) {
+    [data-section-type=buttons-links-list] .ButtonLinksList--carousel {
+        padding: 0
+    }
+}
+
+@media screen and (max-width:640px) {
+    .ArticleList {
+        padding: 0
+    }
+}
+
+.ArticleList--carousel .flickity-prev-next-button.previous {
+    left: 30px
+}
+
+.ArticleList--carousel .flickity-prev-next-button.next {
+    right: 15px
+}
+
+.ArticleList--carousel * {
+    white-space: normal
+}
+
+.ArticleList .Carousel__Cell {
+    width: calc(66.6666666667% - 0px);
+    flex: 0 0 calc(66.6666666667% - 0px);
+    padding: 0;
+    margin: 0
+}
+
+@media screen and (min-width:1280px) {
+    .ArticleList .Carousel__Cell {
+        width: calc(25% - 0px);
+        flex: 0 0 calc(25% - 0px)
+    }
+}
+
+@media screen and (min-width:641px) {
+    .ArticleList .Carousel__Cell .ArticleItem {
+        width: auto;
+        height: 100%
+    }
+}
+
+.ArticleList .Carousel__Cell .ArticleItem__Content {
+    margin: 0
+}
+
+.ArticleList .Carousel__Cell .ArticleItem__Title {
+    color: #000;
+    font-weight: 700;
+    line-height: 1.15;
+    font-size: .8em;
+    margin: 0 0 .5em 0
+}
+
+@media screen and (min-width:1280px) {
+    .ArticleList .Carousel__Cell .ArticleItem__Title {
+        font-size: 1em
+    }
+}
+
+.ArticleList .Carousel__Cell .ArticleItem__Excerpt {
+    color: #000;
+    line-height: 1.15;
+    font-size: .75em
+}
+
+@media screen and (min-width:1280px) {
+    .ArticleList .Carousel__Cell .ArticleItem__Excerpt {
+        font-size: .9em
+    }
+}
+
+.ArticleList .Carousel__Cell .ArticleItem__Link,
+.ArticleList .Carousel__Cell .ArticleItem [itemprop=datePublished] {
+    display: none
+}
+
+.ArticleList.flickity-resize .flickity-slider .Carousel__Cell {
+    height: 100%
+}
+
+.ArticleList.flickity-resize .flickity-slider .Carousel__Cell .ArticleItem {
+    height: 100%
+}
+
+.SectionHeader:not(:only-child) {
+    margin-bottom: 10px
+}
+
+@media (min-width:1000px) {
+    .SectionHeader:not(:only-child) {
+        margin-bottom: 20px
+    }
+}
+
+.SectionHeader__Heading {
+    font-size: 1.5em;
+    line-height: 1.15;
+    font-weight: bolder;
+    text-transform: initial;
+    letter-spacing: inherit;
+    margin: auto;
+    display: block
+}
+
+@media screen and (min-width:1280px) {
+    .SectionHeader__Heading {
+        font-size: 24px
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .SectionHeader__Heading--Large {
+        font-size: 32px
+    }
+}
+
+.SectionHeader__Heading {
+    margin: auto auto .15em auto
+}
+
+.SectionHeader__SubHeading {
+    line-height: 1.15;
+    margin-bottom: .5em;
+    text-transform: initial;
+    font-size: .9em;
+    font-weight: lighter;
+    margin: 0;
+    display: block
+}
+
+@media screen and (min-width:1280px) {
+    .SectionHeader__SubHeading {
+        font-size: 1.15em;
+        line-height: 1.25;
+        margin: .5em 0 1em 0
+    }
+}
+
+.SectionHeader .SectionFooter {
+    margin-top: 40px
+}
+
+.SectionHeader .SectionFooter .Button {
+    width: 80%;
+    max-width: 300px;
+    font-weight: 700;
+    padding: .75em 2em
+}
+
+.SectionHeader .ArticleList--carousel .Carousel__Cell {
+    width: calc(66.6666666667% - 0px);
+    flex: 0 0 calc(66.6666666667% - 0px);
+    margin-left: 0
+}
+
+@media screen and (min-width:641px) {
+    .SectionHeader .ArticleList--carousel .Carousel__Cell {
+        width: calc(40% - 0px);
+        flex: 0 0 calc(40% - 0px)
+    }
+}
+
+@media screen and (min-width:1008px) {
+    .SectionHeader .ArticleList--carousel .Carousel__Cell {
+        width: calc(22.2222222222% - 0px);
+        flex: 0 0 calc(22.2222222222% - 0px)
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .SectionHeader .ArticleList--carousel .Carousel__Cell {
+        width: calc(18.1818181818% - 0px);
+        flex: 0 0 calc(18.1818181818% - 0px)
+    }
+}
+
+[data-section-type=buttons-links-list] {
+    padding: 15px 0
+}
+
+@media screen and (min-width:1008px) {
+    [data-section-type=buttons-links-list] {
+        padding: 15px 0
+    }
+}
+
+[data-section-type=buttons-links-list]>.container {
+    padding: 0
+}
+
+[data-section-type=buttons-links-list] .SectionHeader:not(:only-child) {
+    margin-bottom: 10px
+}
+
+@media (min-width:1000px) {
+    [data-section-type=buttons-links-list] .SectionHeader:not(:only-child) {
+        margin-bottom: 20px
+    }
+}
+
+[data-section-type=buttons-links-list] .SectionHeader__Heading {
+    font-size: 1.5em;
+    line-height: 1.15;
+    font-weight: bolder;
+    text-transform: initial;
+    letter-spacing: inherit;
+    margin: auto;
+    display: block
+}
+
+@media screen and (min-width:1280px) {
+    [data-section-type=buttons-links-list] .SectionHeader__Heading {
+        font-size: 24px
+    }
+}
+
+@media screen and (min-width:1280px) {
+    [data-section-type=buttons-links-list] .SectionHeader__Heading--Large {
+        font-size: 32px
+    }
+}
+
+[data-section-type=buttons-links-list] .SectionHeader__Heading {
+    margin: auto auto .15em auto
+}
+
+[data-section-type=buttons-links-list] .SectionHeader__SubHeading {
+    line-height: 1.15;
+    margin-bottom: .5em;
+    text-transform: initial;
+    font-size: .9em;
+    font-weight: lighter;
+    margin: 0;
+    display: block
+}
+
+@media screen and (min-width:1280px) {
+    [data-section-type=buttons-links-list] .SectionHeader__SubHeading {
+        font-size: 1.15em;
+        line-height: 1.25;
+        margin: .5em 0 1em 0
+    }
+}
+
+[data-section-type=buttons-links-list] .SectionFooter {
+    margin-top: 40px
+}
+
+[data-section-type=buttons-links-list] .SectionFooter .Button {
+    width: 80%;
+    max-width: 300px;
+    font-weight: 700;
+    padding: .75em 2em
+}
+
+[data-section-type=buttons-links-list] .ButtonLinksList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0-.5em;
+    padding: 0
+}
+
+[data-section-type=buttons-links-list] .ButtonLinksList--layout-buttons .ButtonLinksList__Cell {
+    padding: .5em;
+    width: calc(50% - 0px);
+    flex: 0 0 calc(50% - 0px)
+}
+
+@media screen and (min-width:641px) {
+    [data-section-type=buttons-links-list] .ButtonLinksList--layout-buttons .ButtonLinksList__Cell {
+        width: calc(50% - 0px);
+        flex: 0 0 calc(50% - 0px)
+    }
+}
+
+@media screen and (min-width:1008px) {
+    [data-section-type=buttons-links-list] .ButtonLinksList--layout-buttons .ButtonLinksList__Cell {
+        width: calc(33.3333333333% - 0px);
+        flex: 0 0 calc(33.3333333333% - 0px)
+    }
+}
+
+@media screen and (min-width:1280px) {
+    [data-section-type=buttons-links-list] .ButtonLinksList--layout-buttons .ButtonLinksList__Cell {
+        width: calc(16.6666666667% - 0px);
+        flex: 0 0 calc(16.6666666667% - 0px);
+        padding: 0 .5em
+    }
+}
+
+[data-section-type=buttons-links-list] .ButtonLinksList--layout-buttons .ButtonLinksList__Item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5em;
+    border: 1px solid #333;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    padding: .25em;
+    font-size: .9em
+}
+
+@media screen and (min-width:1280px) {
+    [data-section-type=buttons-links-list] .ButtonLinksList--layout-buttons .ButtonLinksList__Item a {
+        padding: .5em;
+        font-size: 1.25em
+    }
+}
+
+[data-section-type=buttons-links-list] .ButtonLinksList--layout-circle .ButtonLinksList__Image {
+    max-width: 120px;
+    margin: auto auto .5em
+}
+
+@media screen and (min-width:1008px) {
+    [data-section-type=buttons-links-list] .ButtonLinksList--layout-circle .ButtonLinksList__Image {
+        margin: auto auto 1em
+    }
+}
+
+[data-section-type=buttons-links-list] .ButtonLinksList--layout-circle .ButtonLinksList__Image img {
+    width: 100%
+}
+
+@media screen and (min-width:680px) {
+    [data-section-type=buttons-links-list] .ButtonLinksList--layout-image-overlay,
+    [data-section-type=buttons-links-list] .ButtonLinksList--layout-circle {
+        gap: 1em;
+        justify-content: center
+    }
+}
+
+[data-section-type=buttons-links-list] .ButtonLinksList--layout-image-overlay .ButtonLinksList__Cell,
+[data-section-type=buttons-links-list] .ButtonLinksList--layout-circle .ButtonLinksList__Cell {
+    padding: 0;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+@media screen and (min-width:680px) {
+    [data-section-type=buttons-links-list] .ButtonLinksList--layout-image-overlay .ButtonLinksList__Cell,
+    [data-section-type=buttons-links-list] .ButtonLinksList--layout-circle .ButtonLinksList__Cell {
+        width: 100px
+    }
+}
+
+@media screen and (min-width:1008px) {
+    [data-section-type=buttons-links-list] .ButtonLinksList--layout-image-overlay .ButtonLinksList__Cell,
+    [data-section-type=buttons-links-list] .ButtonLinksList--layout-circle .ButtonLinksList__Cell {
+        width: 150px
+    }
+}
+
+[data-section-type=buttons-links-list] .ButtonLinksList--layout-image-overlay .ButtonLinksList__Item,
+[data-section-type=buttons-links-list] .ButtonLinksList--layout-circle .ButtonLinksList__Item {
+    width: 100%
+}
+
+[data-section-type=buttons-links-list] .ButtonLinksList--layout-image-overlay .ButtonLinksList__Title,
+[data-section-type=buttons-links-list] .ButtonLinksList--layout-circle .ButtonLinksList__Title {
+    text-align: center;
+    font-weight: 700;
+    font-size: .7em
+}
+
+@media screen and (min-width:1280px) {
+    [data-section-type=buttons-links-list] .ButtonLinksList--layout-image-overlay .ButtonLinksList__Title,
+    [data-section-type=buttons-links-list] .ButtonLinksList--layout-circle .ButtonLinksList__Title {
+        font-size: 1em
+    }
+}
+
+[data-section-type=buttons-links-list] .ButtonLinksList--layout-image-overlay {
+    justify-content: center !important
+}
+
+[data-section-type=buttons-links-list] .ButtonLinksList--layout-image-overlay .ButtonLinksList__Cell {
+    padding: 0;
+    width: calc(50% - 0px);
+    flex: 0 0 calc(50% - 0px)
+}
+
+@media screen and (min-width:641px) {
+    [data-section-type=buttons-links-list] .ButtonLinksList--layout-image-overlay .ButtonLinksList__Cell {
+        padding: .5em;
+        width: calc(50% - 0px);
+        flex: 0 0 calc(50% - 0px)
+    }
+}
+
+@media screen and (min-width:1008px) {
+    [data-section-type=buttons-links-list] .ButtonLinksList--layout-image-overlay .ButtonLinksList__Cell {
+        width: calc(33.3333333333% - 0px);
+        flex: 0 0 calc(33.3333333333% - 0px)
+    }
+}
+
+@media screen and (min-width:1280px) {
+    [data-section-type=buttons-links-list] .ButtonLinksList--layout-image-overlay .ButtonLinksList__Cell {
+        width: calc(20% - 0px);
+        flex: 0 0 calc(20% - 0px);
+        padding: 0 .5em
+    }
+}
+
+[data-section-type=buttons-links-list] .ButtonLinksList--layout-image-overlay .ButtonLinksList__Item {
+    width: 100%;
+    height: 100%
+}
+
+[data-section-type=buttons-links-list] .ButtonLinksList--layout-image-overlay .ButtonLinksList__Item a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block
+}
+
+[data-section-type=buttons-links-list] .ButtonLinksList--layout-image-overlay .ButtonLinksList__Item a::before {
+    content: "";
+    padding-bottom: 130%;
+    display: block
+}
+
+[data-section-type=buttons-links-list] .ButtonLinksList--layout-image-overlay .ButtonLinksList__Item a .ButtonLinksList__Image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0
+}
+
+[data-section-type=buttons-links-list] .ButtonLinksList--layout-image-overlay .ButtonLinksList__Item a .ButtonLinksList__Image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+[data-section-type=buttons-links-list] .ButtonLinksList--layout-image-overlay .ButtonLinksList__Item a .ButtonLinksList__Title {
+    position: absolute;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    white-space: normal;
+    line-height: 1.15;
+    padding: .5em
+}
+
+@media (min-width:1280px) {
+    [data-section-type=buttons-links-list] .ButtonLinksList--layout-image-overlay .ButtonLinksList__Item a .ButtonLinksList__Title {
+        font-size: 1.25em
+    }
+}

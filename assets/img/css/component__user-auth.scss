@@ -1,0 +1,56 @@
+@import "mixins";
+[data-section-type="component__user-auth"] {
+  #rc_login {
+    display: none;
+  }
+  .auth {
+    &__form {
+      &[data-step] {
+        display: none;
+        &.--active {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      &--login {
+        display: flex;
+        flex-direction: column;
+      }
+      &__header {
+        font-size: 1em;
+        margin: 0.5em 0 1.5em 0;
+        display: block;
+      }
+      &__title {
+        @include SectionHeader__Heading();
+        margin-bottom: 0.5em;
+        font-size: 1.15em;
+        @media screen and (min-width: 1280px) {
+          text-align: left;
+          font-size: 1.15em;
+        }
+      }
+      &__legend {
+        line-height: 1.15;
+        font-size: 1em;
+        display: block;
+      }
+
+      .Form {
+        &__Alert {
+          margin-top: 15px;
+        }
+        &__Step {
+          display: none;
+          &.--active {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .frcp-social-logins .frcp-btn {
+    padding: 10px;
+  }
+}
